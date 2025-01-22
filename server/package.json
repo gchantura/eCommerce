@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "ts-node index.ts",
+    "init-db": "ts-node db/init-db.ts",
+    "cleanup-db": "ts-node db/cleanup.ts",
+    "reset-db": "npm run cleanup-db && npm run init-db"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.0",
+    "@types/pg": "^8.11.10",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.11.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
